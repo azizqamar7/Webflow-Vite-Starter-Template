@@ -22,8 +22,6 @@ webflow-starter/
 │   ├── home/               # Home page specific scripts
 │   │   └── index.js
 │   ├── about/              # About page specific scripts
-│   │   └── index.js
-│   └── three-scene/        # Three.js specific scripts
 │       └── index.js
 ├── vite.config.js          # Vite configuration
 ├── package.json
@@ -42,8 +40,8 @@ webflow-starter/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/webflow-starter.git
-   cd webflow-starter
+   git clone https://github.com/azizqamar7/Webflow-Vite-Starter-Template
+   cd Webflow-Vite-Starter-Template
    ```
 
 2. Install dependencies:
@@ -99,10 +97,6 @@ The built files will be in the `dist` directory, organized by entry point:
 
 <!-- Add to the about page custom code section -->
 <script src="path/to/about.js" defer></script>
-
-<!-- Add to pages where you need Three.js -->
-<script src="path/to/three-scene.js" defer></script>
-<div id="three-container" style="width: 100%; height: 500px;"></div>
 ```
 
 ### Advanced Setup with Webflow's CMS
@@ -130,7 +124,6 @@ input: {
   'global': resolve(__dirname, 'src/global/index.js'),
   'home': resolve(__dirname, 'src/home/index.js'),
   'about': resolve(__dirname, 'src/about/index.js'),
-  'three-scene': resolve(__dirname, 'src/three-scene/index.js'),
   'contact': resolve(__dirname, 'src/contact/index.js'), // New entry point
 },
 ```
